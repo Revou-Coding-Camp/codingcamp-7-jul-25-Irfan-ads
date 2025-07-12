@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MC: RvU</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Absensi Harian</h1>
+
+    <div class="input-group">
+      <input type="text" id="username" placeholder="please input" />
+      <input type="text" id="tanggal" placeholder="--/--/----" onfocus="(this.type='date')" onblur="(this.type='text')" />
+      <button id="addBtn">Tambah</button>
+    </div>
+
+    <div class="search-group">
+        <div class="search-container">
+            <input type="text" id="searchAll" placeholder="Search..." />
+            <button class="searchBtn" id="filterBtn" title="Cari">
+            <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container_fluid">
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Tanggal</th>
+            <th>Status</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody id="todoTableBody">
+          <tr><td colspan="4" class="no-task">empty</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
